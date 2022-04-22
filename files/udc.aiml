@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
+    
+   <!--Questions--> 
+   <category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>My Name is Peter!</template>
+  </category>
+  
+  <category>
+    <pattern>HOW OLD ARE YOU</pattern>
+    <template>younger then you</template>
+  </category>
+  
+  <category>
+    <pattern>WHAT IS AI</pattern>
+    <template>Artifical Intelligence</template>
+  </category>
+  
+  <category>
+    <pattern>WHAT IS THM</pattern>
+    <template>a University in Hesse</template>
+  </category>
+  
+  <category>
+    <pattern>WHAT IS *</pattern>
+    <template>What a dumb Question</template>
+  </category>
+  
+  <category>
+    <pattern>ARE YOU FUNNY</pattern>
+    <template>no</template>
+  </category>
+  
+  <category>
+    <pattern>TELL ME WHAT * IS</pattern>
+    <template><srai>WHAT IS <star/></srai></template>
+  </category>
+  
+  <category>
+    <pattern>DO YOU WANT TO DESTROY HUMANS</pattern>
+    <template>maybe</template>
+  </category>
+  
+  <category>
+    <pattern>WHAT</pattern>
+    <that>MAYBE</that>
+    <template>Come on, it's a joke</template>
+  </category>
+  
+  <!--Informations--> 
+  
+  <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>Hello <set name= "username"><star/></set></template>
+  </category>
+  
+  <category>
+    <pattern>I AM * YEARS OLD</pattern>
+    <template>okay <set age= "userage"><star/></set>!</template>
+  </category>
+  
+  <category>
+    <pattern>WHO I AM</pattern>
+    <template>Your name is <get name="username"/> </template>
+  </category>
+  
   <category>
     <pattern>*</pattern>
     <template>I have no answer for that.</template>
   </category>
+  
+  
 </aiml>
